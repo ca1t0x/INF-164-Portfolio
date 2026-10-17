@@ -1,0 +1,1 @@
+THis folder contains all .html files
