@@ -1,1 +1,56 @@
-/* About me stylesheet */
+.about-wrapper {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 70px;
+    padding: 25px 0 78px;
+    align-items: start;
+}
+
+.portrait-panel {
+    margin: 0;
+    background: var(--soft);
+    padding: 25px;
+}
+
+.portrait-panel img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+}
+
+.portrait-panel figcaption {
+    font-size: 12px;
+    margin-top: 14px;
+    color: var(--muted);
+}
+
+.about-copy h2 {
+    margin-top: 0;
+}
+
+.interest-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    gap: 9px;
+    margin: 25px 0;
+}
+
+.interest-list li {
+    padding: 6px 13px;
+    background: var(--soft);
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+@media (max-width: 900px) {
+    .about-wrapper {gap: 36px;}
+}
+
+@media (max-width: 650px) {
+    .about-wrapper {grid-template-columns: 1fr;
+                    gap: 35px;}
+
+    .portrait-panel {max-width: 400px;}
+}
