@@ -1,0 +1,76 @@
+.form-wrapper {
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    gap: 75px;
+    padding: 12px 0 80px;
+}
+
+.contact-aside {
+    padding-top: 26px;
+}
+
+.contact-aside p {
+    color: var(--muted);
+}
+
+.contact-form {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 34px;
+    border-radius: 6px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    background: var(--background);
+    color: var(--text);
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-error {
+    color: #ffb5aa;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+:root.light-mode .form-error {
+    color: #a33232;
+}
+
+.message-preview {
+    margin-top: 24px;
+    padding: 20px;
+    background: var(--soft);
+    border-radius: 4px;
+}
+
+.message-preview h3 {
+    font-size: 23px;
+    margin-top: 0;
+}
+
+#preview-message {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+#preview-email {
+    overflow-wrap: anywhere;
+}
