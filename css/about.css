@@ -18,12 +18,6 @@
     object-fit: cover;
 }
 
-.portrait-panel figcaption {
-    font-size: 12px;
-    margin-top: 14px;
-    color: var(--muted);
-}
-
 .about-copy h2 {
     margin-top: 0;
 }
@@ -42,15 +36,4 @@
     background: var(--soft);
     font-size: 12px;
     border-radius: 3px;
-}
-
-@media (max-width: 900px) {
-    .about-wrapper {gap: 36px;}
-}
-
-@media (max-width: 650px) {
-    .about-wrapper {grid-template-columns: 1fr;
-                    gap: 35px;}
-
-    .portrait-panel {max-width: 400px;}
 }
