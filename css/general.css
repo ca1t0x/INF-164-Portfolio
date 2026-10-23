@@ -1,1 +1,190 @@
-/* shared styling  stylesheet*/
+:root {
+    color-scheme: dark;
+    --background: #1d2520;
+    --surface: #263129;
+    --soft: #303c32;
+    --text: #f3f0e7;
+    --muted: #c2c9bd;
+    --border: #455147;
+    --accent: #e6cc7a;
+    --green: #d8dfd0;
+    --button-text: #1d2520;
+}
+
+:root.light-mode {
+    color-scheme: light;
+    --background: #f8f6f0;
+    --surface: #ffffff;
+    --soft: #eeeae0;
+    --text: #292e2a;
+    --muted: #63675f;
+    --border: #dddcd2;
+    --accent: #a88b30;
+    --green: #35483c;
+    --button-text: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+button, input, textarea, select {
+    font: inherit;
+}
+
+button, .button {
+    cursor: pointer;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+h1 {
+    font-size: clamp(40px, 5.7vw, 72px);
+    letter-spacing: -2px;
+    margin: 16px 0 24px;
+}
+
+h2 {
+    font-size: clamp(30px, 3.6vw, 43px);
+    letter-spacing: -1px;
+    margin: 12px 0 22px;
+}
+
+h3 {
+    font-size: 27px;
+    margin: 12px 0;
+}
+
+p {
+    margin: 0 0 18px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/* Shared page layout and text. */
+.page-wrapper {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.muted, .header-sub, .form-help {
+    color: var(--muted);
+}
+
+.eyebrow, .small-heading {
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.section-space {
+    padding: 74px 0;
+}
+
+.header-sub {
+    font-size: 18px;
+    max-width: 620px;
+}
+
+/* KEYBOARD SHORTCUT */ 
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 16px;
+    background: var(--surface);
+    padding: 10px;
+    z-index: 10;
+}
+
+.skip-link:focus {
+    top: 12px;
+}
+
+/* Shared buttons. */
+.button {
+    display: inline-block;
+    border: 1px solid var(--green);
+    background: var(--green);
+    color: var(--button-text);
+    text-decoration: none;
+    padding: 13px 23px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.button:hover {
+    opacity: .88;
+}
+
+.button.secondary {
+    color: var(--text);
+    background: transparent;
+    border-color: var(--border);
+}
+
+.button-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
+
+.section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 25px;
+    margin-bottom: 28px;
+}
+
+.section-top h2 {
+    margin-bottom: 0;
+}
+
+.text-link {
+    font-size: 13px;
+}
+
+.page-header {
+    max-width: 750px;
+    padding: 64px 0 38px;
+}
+
+.page-header h1 {
+    font-size: clamp(39px, 5vw, 59px);
+}
+
+.form-help {
+    font-size: 12px;
+}
+
+.layout-message {
+    padding: 20px 0;
+}
